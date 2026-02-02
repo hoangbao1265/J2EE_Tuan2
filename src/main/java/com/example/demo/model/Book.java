@@ -1,28 +1,26 @@
 package com.example.demo.model;
 
 public class Book {
-    private int id;
+    private Long id;
     private String title;
     private String author;
-    private int price;
 
     // Constructor
     public Book() {
     }
 
-    public Book(int id, String title, String author, int price) {
+    public Book(Long id, String title, String author) {
         this.id = id;
         this.title = title;
         this.author = author;
-        this.price = price;
     }
 
     // Getters and Setters
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -40,18 +38,5 @@ public class Book {
 
     public void setAuthor(String author) {
         this.author = author;
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public void setAuthorAndPrice(String author, int price) {
-        this.author = author;
-        this.price = price;
     }
 }
